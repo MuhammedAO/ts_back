@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable array-callback-return */
 import React, { useEffect, useState } from 'react'
-import { Tooltip, Icon } from 'antd';
-import Axios from 'axios';
+import { Tooltip, Icon } from 'antd'
+import Axios from 'axios'
 
 function LikeDislikes(props) {
 
@@ -10,7 +10,7 @@ function LikeDislikes(props) {
     const [Dislikes, setDislikes] = useState(0)
     const [LikeAction, setLikeAction] = useState(null)
     const [DislikeAction, setDislikeAction] = useState(null)
-    let variable = {};
+    let variable = {}
 
     if (props.video) {
         variable = { videoId: props.videoId, userId: props.userId }
@@ -158,7 +158,7 @@ function LikeDislikes(props) {
                         onClick={onLike} />
                 </Tooltip>
                 <span style={{ paddingLeft: '8px', cursor: 'auto' }}>{Likes}</span>
-            </span>&nbsp;&nbsp;
+            </span>&nbsp&nbsp
             <span key="comment-basic-dislike">
                 <Tooltip title="Dislike">
                     <Icon
