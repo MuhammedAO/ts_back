@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
-const Math = require("path")
+const path = require("path")
 
 const config = require("./config/key");
 
